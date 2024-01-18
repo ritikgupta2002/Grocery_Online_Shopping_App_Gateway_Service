@@ -12,5 +12,5 @@ app.use("/customer", proxy("http://localhost:8001")); //customer
 app.use("/", proxy("http://localhost:8002")); //products
 
 app.listen(8000, () => {
-  console.log("root is listening to the port 8000");   
+  console.log("gateway is listening to the port 8000");   
 });
